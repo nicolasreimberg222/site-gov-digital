@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Identidade | Governo Digital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f8f9fb;
+    color: #333;
+}
+
+/* HEADER */
+.gov-bar {
+    background: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gov-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.gov-left img {
+    height: 24px;
+}
+
+.gov-left span {
+    font-size: 14px;
+}
+
+.gov-links {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.gov-links a {
+    font-size: 14px;
+    color: #1351b4;
+    text-decoration: none;
+}
+
+.gov-right button {
+    background: #1351b4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* MENU */
+.menu {
+    background: white;
+    padding: 14px 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.menu span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1351b4;
+}
+
+/* BANNER */
+.banner {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 12px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* TEXTO */
+.texto {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 16px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* CARDS */
+.cards {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: white;
+    padding: 26px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.card span {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* BOTÕES */
+.botoes {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.botoes button {
+    margin: 6px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid #1351b4;
+    background: white;
+    color: #1351b4;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #dcdcdc;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .gov-left span {
+        display: none;
+    }
+
+    .gov-links {
+        width: 100%;
+        justify-content: center;
+        margin-top: 8px;
+    }
+
+    .gov-right {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="gov-bar">
+    <div class="gov-left">
+        <img src="gov.png" alt="gov.br">
+        <span>Ministério da Gestão e da Inovação em Serviços Públicos</span>
+
+        <div class="gov-links">
+            <a href="#">Órgãos</a>
+            <a href="#">Informação</a>
+            <a href="#">Legislação</a>
+            <a href="#">Acessibilidade</a>
+        </div>
+    </div>
+
+    <div class="gov-right">
+        <button>Entrar com gov.br</button>
+    </div>
+</header>
+
+<div class="menu">
+    <span>☰</span>
+    <span>Governo Digital</span>
+</div>
+
+<div class="banner">
+    <img src="banner-identidade.png" alt="Banner Identidade">
+</div>
+
+<div class="texto">
+    A identidade digital permite confirmar quem está realizando uma transação,
+    garantindo segurança e praticidade no acesso aos serviços públicos.
+</div>
+
+<div class="cards">
+    <div class="card" onclick="window.location.href='rg.html'">
+        <span>🪪</span>
+        Identificação do Cidadão
+    </div>
+
+    <div class="card"><span>👤</span>Conta gov.br</div>
+    <div class="card"><span>✍️</span>Assinatura Eletrônica</div>
+    <div class="card"><span>📂</span>Documentos Digitais</div>
+    <div class="card"><span>🔒</span>Dados Pessoais</div>
+    <div class="card"><span>❤️</span>Prova de Vida</div>
+</div>
+
+<footer class="gov-bar">
+    <div class="gov-left">
+        <img src="gov.png" alt="gov.br">
+        <span>Ministério da Gestão e da Inovação em Serviços Públicos</span>
+    </div>
+</footer>
+
+</body>
+</html>
